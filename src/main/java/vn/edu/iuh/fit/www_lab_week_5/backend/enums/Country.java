@@ -1,4 +1,4 @@
-package vn.edu.iuh.fit.www_lab_week_5.enums;
+package vn.edu.iuh.fit.www_lab_week_5.backend.enums;
 
 public enum Country {
     USA("United States of America"),
