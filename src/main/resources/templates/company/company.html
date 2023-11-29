@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Company List</title>
+</head>
+<body>
+<h1>Company List</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>About</th>
+        <th>Company name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Web URL</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="company : ${companies}">
+        <td th:text="${company.getId()}"></td>
+        <td th:text="${company.getAbout()}"></td>
+        <td th:text="${company.getName()}"></td>
+        <td th:text="${company.getEmail()}"></td>
+        <td th:text="${company.getPhone()}"></td>
+        <td th:text="${company.getWebURL()}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

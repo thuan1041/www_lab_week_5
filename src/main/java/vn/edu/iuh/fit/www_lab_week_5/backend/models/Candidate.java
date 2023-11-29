@@ -23,4 +23,62 @@ public class Candidate {
     @JoinColumn(name = "add_id")
     private Address address;
 
+    public Candidate() {
+    }
+
+    public Candidate(long id, String phone, LocalDate dob, String email, String fullName) {
+        this.id = id;
+        this.phone = phone;
+        this.dob = dob;
+        this.email = email;
+        this.fullName = fullName;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public LocalDate getDob() {
+        return dob;
+    }
+
+    public void setDob(LocalDate dob) {
+        this.dob = dob;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
 }
